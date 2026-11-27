@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track My Order | FloraBloom Live Flower Delivery Tracking</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!--=============== HEADER ===============-->
+    <header>
+      <div id="mobile">
+        <i id="bar" class="fas fa-bars"></i>
+      </div>
+
+      <div class="nav--logo">
+        <a href="index.html">
+          <i class="fas fa-spa"></i>
+          Flora<span>Bloom</span>
+        </a>
+      </div>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="review.html">Reviews</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav--icon">
+        <a href="#" class="icon-btn open-wish-btn" title="View Favourites">
+          <i class="fas fa-heart"></i>
+          <span class="badge-count wish-count">0</span>
+        </a>
+        <a href="#" class="icon-btn open-cart-btn" title="View Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="badge-count cart-count">0</span>
+        </a>
+        <a href="contact.html" class="icon-btn" title="Help & Contact">
+          <i class="fas fa-headset"></i>
+        </a>
+      </div>
+    </header>
+
+    <!--=============== HERO BANNER ===============-->
+    <section id="hero" class="hero">
+      <div class="hero--section">
+        <h1>Track Your Flower Delivery</h1>
+        <p>Monitor your hand-crafted bouquet from sunrise harvest to doorstep arrival in real time.</p>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Track Order</span>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== TRACKING SECTION ===============-->
+    <section style="padding: 8rem 7%;">
+      <div class="track-card">
+        <div class="track-form-wrap">
+          <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+            <span class="section-tag">Live Satellite Dispatch</span>
+            <h2 style="font-size: 2.8rem;">Enter Order Details</h2>
+            <p class="section-subtitle" style="margin: 0;">Enter your 7-digit Order Reference ID found in your confirmation email or SMS.</p>
+          </div>
+
+          <form class="track-form" onsubmit="event.preventDefault(); showToast('Tracking status refreshed! 🌸', 'fa-sync-alt');">
+            <input type="text" value="#FB-89421" placeholder="e.g. #FB-89421" required />
+            <input type="text" value="sophia@example.com" placeholder="Email or Phone Number" required />
+            <button type="submit" class="btn" style="padding: 1.4rem 3rem;">
+              <i class="fas fa-search"></i>
+              <span>Track Delivery</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Live Tracker Result -->
+        <div class="track-result-box">
+          <div class="track-header-meta">
+            <div>
+              <span class="order-badge-pill">
+                <span class="pulse-dot"></span>
+                <span>OUT FOR EXPRESS DELIVERY</span>
+              </span>
+              <h3 style="font-size: 2.2rem; margin-top: 1rem;">Order #FB-89421</h3>
+              <p style="font-size: 1.4rem; color: var(--text-muted); margin: 0;">Recipient: <strong>Eleanor Vance</strong> • Blushing Rose Symphony</p>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 1.35rem; color: var(--text-muted);">Estimated Arrival Window</div>
+              <div style="font-size: 2.2rem; font-weight: 800; color: var(--primary);">Today, 2:30 PM - 3:30 PM</div>
+            </div>
+          </div>
+
+          <!-- 4-Step Stepper -->
+          <div class="track-stepper">
+            <div class="track-step done">
+              <div class="step-icon"><i class="fas fa-check"></i></div>
+              <h5>Order Placed</h5>
+              <p>Today, 9:15 AM</p>
+            </div>
+
+            <div class="track-step done">
+              <div class="step-icon"><i class="fas fa-seedling"></i></div>
+              <h5>Artisan Arranged</h5>
+              <p>Conditioned & Tied (11:00 AM)</p>
+            </div>
+
+            <div class="track-step current">
+              <div class="step-icon"><i class="fas fa-truck"></i></div>
+              <h5>Out for Delivery</h5>
+              <p>Temp-Controlled Van #04</p>
+            </div>
+
+            <div class="track-step">
+              <div class="step-icon"><i class="fas fa-home"></i></div>
+              <h5>Delivered</h5>
+              <p>Pending Arrival</p>
+            </div>
+          </div>
+
+          <!-- Delivery Details & Courier Card -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr)); gap: 2rem; margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--border-subtle);">
+            <div style="display: flex; gap: 1.5rem; align-items: center;">
+              <div style="width: 5rem; height: 5rem; border-radius: 50%; background: var(--primary-soft); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--primary);">
+                <i class="fas fa-user-shield"></i>
+              </div>
+              <div>
+                <h5 style="font-size: 1.5rem; margin-bottom: 0.2rem;">Courier Specialist</h5>
+                <p style="font-size: 1.35rem; color: var(--text-muted); margin: 0;">Marcus Green (Vaccinated & Certified)</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1.5rem; align-items: center;">
+              <div style="width: 5rem; height: 5rem; border-radius: 50%; background: var(--primary-soft); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--primary);">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h5 style="font-size: 1.5rem; margin-bottom: 0.2rem;">Delivery Destination</h5>
+                <p style="font-size: 1.35rem; color: var(--text-muted); margin: 0;">742 Evergreen Terrace, New York, NY</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1.5rem; align-items: center;">
+              <div style="width: 5rem; height: 5rem; border-radius: 50%; background: var(--primary-soft); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--primary);">
+                <i class="fas fa-envelope-open-text"></i>
+              </div>
+              <div>
+                <h5 style="font-size: 1.5rem; margin-bottom: 0.2rem;">Handwritten Linen Card</h5>
+                <p style="font-size: 1.35rem; color: var(--text-muted); margin: 0;">"Happy Birthday Mom! Love you always."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 4rem; text-align: center; background: #fafaf8; padding: 2.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+          <h4 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Need to update your delivery address or instructions?</h4>
+          <p style="color: var(--text-muted); font-size: 1.45rem; margin-bottom: 1.5rem;">Our customer concierge is available live via chat or telephone to modify instructions before delivery.</p>
+          <a href="contact.html" class="btn btn-secondary">
+            <i class="fas fa-headset"></i>
+            <span>Speak to Dispatch Concierge</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== FOOTER ===============-->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-grid">
+          <div class="footer-col footer-about">
+            <div class="nav--logo" style="margin-bottom: 1.5rem;">
+              <a href="index.html" style="color: #fff;">
+                <i class="fas fa-spa"></i>
+                Flora<span>Bloom</span>
+              </a>
+            </div>
+            <p>
+              Your boutique destination for premium floral arrangements, luxury plants, and heartfelt gifts handcrafted with botanical artistry and sustainable care.
+            </p>
+            <div class="footer-socials">
+              <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+              <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+              <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+              <li><a href="product.html"><i class="fas fa-angle-right"></i> Shop Flowers</a></li>
+              <li><a href="review.html"><i class="fas fa-angle-right"></i> Customer Reviews</a></li>
+              <li><a href="blog.html"><i class="fas fa-angle-right"></i> Floral Blog</a></li>
+              <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Customer Care</h3>
+            <ul class="footer-links">
+              <li><a href="track-order.html"><i class="fas fa-angle-right"></i> Track My Order</a></li>
+              <li><a href="care-guide.html"><i class="fas fa-angle-right"></i> Flower Care Guide</a></li>
+              <li><a href="guarantee.html"><i class="fas fa-angle-right"></i> 7-Day Guarantee</a></li>
+              <li><a href="delivery.html"><i class="fas fa-angle-right"></i> Same-Day Delivery</a></li>
+              <li><a href="faq.html"><i class="fas fa-angle-right"></i> FAQ & Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Sign up to receive 15% off your first arrangement plus curated seasonal floral styling tips.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address..." required />
+              <button type="submit">Subscribe</button>
+            </form>
+            <div class="payment-methods">
+              <span>Secure Payments:</span>
+              <div class="pay-icons">
+                <i class="fab fa-cc-visa" title="Visa"></i>
+                <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                <i class="fab fa-cc-paypal" title="PayPal"></i>
+                <i class="fab fa-cc-apple-pay" title="Apple Pay"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="credit">
+        <p>© 2026 FloraBloom Boutique. All Rights Reserved. Crafted with <i class="fas fa-heart" style="color: var(--accent);"></i> for flower lovers.</p>
+        <div class="credit-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Delivery Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--=============== SLIDE-OUT CART DRAWER ===============-->
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3><i class="fas fa-shopping-bag"></i> Your Basket</h3>
+        <div class="close-cart-btn" title="Close"><i class="fas fa-times"></i></div>
+      </div>
+      <div class="cart-items-body"></div>
+      <div class="cart-footer">
+        <div class="cart-subtotal">
+          <span>Subtotal:</span>
+          <strong class="cart-subtotal-val">$0.00</strong>
+        </div>
+        <button class="btn checkout-btn" onclick="showToast('Proceeding to secure checkout! 🌸', 'fa-lock')">Proceed to Checkout</button>
+      </div>
+    </div>
+
+    <!--=============== SLIDE-OUT FAVOURITES / WISHLIST DRAWER ===============-->
+    <div class="wishlist-drawer">
+      <div class="cart-header">
+        <h3><i class="fas fa-heart" style="color: #e63946;"></i> Your Favourites (<span class="wish-count-val">0</span>)</h3>
+        <div class="close-wish-btn" title="Close"><i class="fas fa-times"></i></div>
+      </div>
+      <div class="wishlist-items-body"></div>
+      <div class="cart-footer">
+        <button class="btn" style="width: 100%;" onclick="moveAllWishlistToCart()">
+          <i class="fas fa-shopping-bag"></i> Move All to Basket
+        </button>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top-btn"><i class="fas fa-arrow-up"></i></div>
+
+    <!-- Script Link -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

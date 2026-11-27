@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us & Flower Studio | FloraBloom</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!--=============== HEADER ===============-->
+    <header>
+      <div id="mobile">
+        <i id="bar" class="fas fa-bars"></i>
+      </div>
+
+      <div class="nav--logo">
+        <a href="index.html">
+          <i class="fas fa-spa"></i>
+          Flora<span>Bloom</span>
+        </a>
+      </div>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="review.html">Reviews</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="nav--icon">
+        <a href="#" class="icon-btn open-wish-btn" title="View Favourites">
+          <i class="fas fa-heart"></i>
+          <span class="badge-count wish-count">0</span>
+        </a>
+        <a href="#" class="icon-btn open-cart-btn" title="View Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="badge-count cart-count">0</span>
+        </a>
+        <a href="contact.html" class="icon-btn" title="Help & Contact">
+          <i class="fas fa-headset"></i>
+        </a>
+      </div>
+    </header>
+
+    <!--=============== HERO BANNER ===============-->
+    <section id="hero" class="hero">
+      <div class="hero--section">
+        <h1>Connect With Our Florists</h1>
+        <p>We are here to assist with custom bouquets, wedding consultations, or delivery questions.</p>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Contact Us</span>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== CONTACT CARDS ===============-->
+    <section id="contact" class="contact">
+      <div class="section-header">
+        <span class="section-tag">Direct Communication</span>
+        <h2 class="heading">Get In <span>Touch</span></h2>
+        <p class="section-subtitle">Reach out through your preferred channel; our team responds promptly within 1 hour.</p>
+      </div>
+
+      <div class="icons-container">
+        <!-- Card 1 -->
+        <div class="contact-info-card">
+          <div class="contact-icon-circle">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h3>Call Our Concierge</h3>
+          <p><a href="tel:+18005553567">+1 (800) 555-FLORA</a></p>
+          <p><a href="tel:+12125550199">+1 (212) 555-0199</a></p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="contact-info-card">
+          <div class="contact-icon-circle">
+            <i class="fas fa-envelope-open-text"></i>
+          </div>
+          <h3>Send Us An Email</h3>
+          <p><a href="mailto:concierge@florabloom.com">concierge@florabloom.com</a></p>
+          <p><a href="mailto:support@florabloom.com">support@florabloom.com</a></p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="contact-info-card">
+          <div class="contact-icon-circle">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <h3>Visit Our Boutique</h3>
+          <p>452 Botanical Avenue, Suite 100</p>
+          <p>Floral Arts District, NY 10012</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="contact-info-card">
+          <div class="contact-icon-circle">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Studio Hours</h3>
+          <p>Mon - Sat: 8:00 AM – 8:00 PM</p>
+          <p>Sun: 9:00 AM – 6:00 PM</p>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== FORM & MAP SPLIT ===============-->
+    <section id="form" class="form">
+      <div class="form--des">
+        <div class="input-content">
+          <div class="form-header">
+            <h3>Send A Message</h3>
+            <p>Tell us your custom floral request, wedding date, or general inquiry.</p>
+          </div>
+
+          <form action="">
+            <div class="form-grid">
+              <div class="input-group">
+                <label for="name">Your Full Name *</label>
+                <input type="text" id="name" placeholder="e.g. Sophia Turner" required />
+              </div>
+              <div class="input-group">
+                <label for="email">Your Email Address *</label>
+                <input type="email" id="email" placeholder="e.g. sophia@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+1 (555) 000-0000" />
+              </div>
+              <div class="input-group">
+                <label for="subject">Inquiry Subject *</label>
+                <input type="text" id="subject" placeholder="e.g. Custom Anniversary Order" required />
+              </div>
+            </div>
+
+            <div class="input-group" style="margin-bottom: 2.5rem;">
+              <label for="message">How can our florists assist you? *</label>
+              <textarea id="message" placeholder="Include delivery dates, color palettes, or special notes..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%;">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976397304605!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1689234567890!5m2!1sen!2s"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="FloraBloom Botanical Studio Location"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== FAQ ACCORDION ===============-->
+    <section class="faq-section">
+      <div class="section-header">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="heading">Frequently Asked <span>Questions</span></h2>
+        <p class="section-subtitle">Quick answers to common questions about deliveries, vase life, and order changes.</p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>Do you offer same-day flower delivery?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer" style="max-height: 200px;">
+            <p>
+              Yes! For all orders placed before 2:00 PM local time (Monday through Saturday), we guarantee hand-delivered same-day arrival using temperature-controlled courier vehicles.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How does the 7-day freshness guarantee work?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We source directly from eco-gardens without intermediary warehouses. If your stems fail to bloom radiantly for 7 full days, simply snap a picture and message us; we will issue a free replacement bouquet or full refund immediately.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I customize the flower arrangement and write a card?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Every bouquet comes with a complimentary handwritten linen greeting card. You can write your custom message during checkout or contact our concierge for bespoke stem substitutions.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How are the flowers protected during transit?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Each bouquet is stems-submerged in our proprietary biodegradable hydration pouch that feeds nutrients continuously for up to 48 hours, cushioned in breathable protective kraft paper.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== FOOTER ===============-->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-grid">
+          <div class="footer-col footer-about">
+            <div class="nav--logo" style="margin-bottom: 1.5rem;">
+              <a href="index.html" style="color: #fff;">
+                <i class="fas fa-spa"></i>
+                Flora<span>Bloom</span>
+              </a>
+            </div>
+            <p>
+              Your boutique destination for premium floral arrangements, luxury plants, and heartfelt gifts handcrafted with botanical artistry and sustainable care.
+            </p>
+            <div class="footer-socials">
+              <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+              <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+              <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+              <li><a href="product.html"><i class="fas fa-angle-right"></i> Shop Flowers</a></li>
+              <li><a href="review.html"><i class="fas fa-angle-right"></i> Customer Reviews</a></li>
+              <li><a href="blog.html"><i class="fas fa-angle-right"></i> Floral Blog</a></li>
+              <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Customer Care</h3>
+            <ul class="footer-links">
+              <li><a href="track-order.html"><i class="fas fa-angle-right"></i> Track My Order</a></li>
+              <li><a href="care-guide.html"><i class="fas fa-angle-right"></i> Flower Care Guide</a></li>
+              <li><a href="guarantee.html"><i class="fas fa-angle-right"></i> 7-Day Guarantee</a></li>
+              <li><a href="delivery.html"><i class="fas fa-angle-right"></i> Same-Day Delivery</a></li>
+              <li><a href="faq.html"><i class="fas fa-angle-right"></i> FAQ & Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Sign up to receive 15% off your first arrangement plus curated seasonal floral styling tips.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address..." required />
+              <button type="submit">Subscribe</button>
+            </form>
+            <div class="payment-methods">
+              <span>Secure Payments:</span>
+              <div class="pay-icons">
+                <i class="fab fa-cc-visa" title="Visa"></i>
+                <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                <i class="fab fa-cc-paypal" title="PayPal"></i>
+                <i class="fab fa-cc-apple-pay" title="Apple Pay"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="credit">
+        <p>© 2026 FloraBloom Boutique. All Rights Reserved. Crafted with <i class="fas fa-heart" style="color: var(--accent);"></i> for flower lovers.</p>
+        <div class="credit-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Delivery Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--=============== SLIDE-OUT CART DRAWER ===============-->
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3><i class="fas fa-shopping-bag"></i> Your Basket</h3>
+        <div class="close-cart-btn" title="Close"><i class="fas fa-times"></i></div>
+      </div>
+      <div class="cart-items-body"></div>
+      <div class="cart-footer">
+        <div class="cart-subtotal">
+          <span>Subtotal:</span>
+          <strong class="cart-subtotal-val">$0.00</strong>
+        </div>
+        <button class="btn checkout-btn" onclick="showToast('Proceeding to secure checkout! 🌸', 'fa-lock')">Proceed to Checkout</button>
+      </div>
+    </div>
+
+    <!--=============== SLIDE-OUT FAVOURITES / WISHLIST DRAWER ===============-->
+    <div class="wishlist-drawer">
+      <div class="cart-header">
+        <h3><i class="fas fa-heart" style="color: #e63946;"></i> Your Favourites (<span class="wish-count-val">0</span>)</h3>
+        <div class="close-wish-btn" title="Close"><i class="fas fa-times"></i></div>
+      </div>
+      <div class="wishlist-items-body"></div>
+      <div class="cart-footer">
+        <button class="btn" style="width: 100%;" onclick="moveAllWishlistToCart()">
+          <i class="fas fa-shopping-bag"></i> Move All to Basket
+        </button>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top-btn"><i class="fas fa-arrow-up"></i></div>
+
+    <!-- Script Link -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

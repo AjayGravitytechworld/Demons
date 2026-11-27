@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floral Collections | FloraBloom Artisan Bouquets</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!--=============== HEADER ===============-->
+    <header>
+      <div id="mobile">
+        <i id="bar" class="fas fa-bars"></i>
+      </div>
+
+      <div class="nav--logo">
+        <a href="index.html">
+          <i class="fas fa-spa"></i>
+          Flora<span>Bloom</span>
+        </a>
+      </div>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html" class="active">Products</a>
+        <a href="review.html">Reviews</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav--icon">
+        <a href="#" class="icon-btn open-wish-btn" title="View Favourites">
+          <i class="fas fa-heart"></i>
+          <span class="badge-count wish-count">0</span>
+        </a>
+        <a href="#" class="icon-btn open-cart-btn" title="View Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="badge-count cart-count">0</span>
+        </a>
+        <a href="contact.html" class="icon-btn" title="Help & Contact">
+          <i class="fas fa-headset"></i>
+        </a>
+      </div>
+    </header>
+
+    <!--=============== HERO BANNER ===============-->
+    <section id="hero" class="hero">
+      <div class="hero--section">
+        <h1>Artisan Floral Collections</h1>
+        <p>Fresh hand-tied arrangements for celebrations, sympathy, love, and living space decor.</p>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Shop Products</span>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== PRODUCT SECTION ===============-->
+    <section id="product" class="product">
+      <!-- Search & Category Filters -->
+      <div class="product-controls">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Blooms (9)</button>
+          <button class="filter-btn" data-filter="roses">Roses</button>
+          <button class="filter-btn" data-filter="bouquets">Bouquets</button>
+          <button class="filter-btn" data-filter="orchids">Lilies & Orchids</button>
+          <button class="filter-btn" data-filter="wild">Wildflowers</button>
+        </div>
+
+        <div class="search-box">
+          <input type="text" id="productSearch" placeholder="Search flowers by name..." />
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="product--container">
+        <!-- Flower 1 -->
+        <div class="product-card" data-id="p1" data-category="bouquets">
+          <div class="pro-image-wrapper">
+            <span class="badge-tag badge-sale">-20% OFF</span>
+            <div class="pro-actions">
+              <button class="action-btn view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+              <button class="action-btn wish-btn" title="Save to Wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <img src="images/img-1.png" alt="Blushing Pink Rose Symphony" />
+          </div>
+          <div class="pro-content">
+            <span class="pro-category">Floral Bouquets</span>
+            <h3 class="pro-title">Blushing Pink Rose Symphony</h3>
+            <div class="pro-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <span class="rating-count">(142)</span>
+            </div>
+            <div class="pro-bottom">
+              <div class="price-wrap">
+                <span class="current-price">$24.99</span>
+                <span class="old-price">$30.00</span>
+              </div>
+              <button class="add-cart-btn"><i class="fas fa-shopping-bag"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flower 2 -->
+        <div class="product-card" data-id="p2" data-category="wild">
+          <div class="pro-image-wrapper">
+            <span class="badge-tag badge-hot">HOT</span>
+            <div class="pro-actions">
+              <button class="action-btn view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+              <button class="action-btn wish-btn" title="Save to Wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <img src="images/img-2.png" alt="Golden Sunburst Daisy Harmony" />
+          </div>
+          <div class="pro-content">
+            <span class="pro-category">Wildflowers</span>
+            <h3 class="pro-title">Golden Sunburst Daisy Harmony</h3>
+            <div class="pro-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="rating-count">(89)</span>
+            </div>
+            <div class="pro-bottom">
+              <div class="price-wrap">
+                <span class="current-price">$19.99</span>
+                <span class="old-price">$25.00</span>
+              </div>
+              <button class="add-cart-btn"><i class="fas fa-shopping-bag"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flower 3 -->
+        <div class="product-card" data-id="p3" data-category="orchids">
+          <div class="pro-image-wrapper">
+            <span class="badge-tag badge-new">NEW</span>
+            <div class="pro-actions">
+              <button class="action-btn view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+              <button class="action-btn wish-btn" title="Save to Wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <img src="images/img-3.png" alt="Pure White Lily Reverie" />
+          </div>
+          <div class="pro-content">
+            <span class="pro-category">Lilies & Orchids</span>
+            <h3 class="pro-title">Pure White Lily Reverie</h3>
+            <div class="pro-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <span class="rating-count">(116)</span>
+            </div>
+            <div class="pro-bottom">
+              <div class="price-wrap">
+                <span class="current-price">$28.50</span>
+                <span class="old-price">$35.00</span>
+              </div>
+              <button class="add-cart-btn"><i class="fas fa-shopping-bag"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flower 4 -->
+        <div class="product-card" data-id="p4" data-category="roses">
+          <div class="pro-image-wrapper">
+            <span class="badge-tag badge-sale">BESTSELLER</span>
+            <div class="pro-actions">
+              <button class="action-btn view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+              <button class="action-btn wish-btn" title="Save to Wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <img src="images/img-4.png" alt="Velvet Crimson Passion Roses" />
+          </div>
+          <div class="pro-content">
+            <span class="pro-category">Roses</span>
+            <h3 class="pro-title">Velvet Crimson Passion Roses</h3>
+            <div class="pro-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <span class="rating-count">(210)</span>
+            </div>
+            <div class="pro-bottom">
+              <div class="price-wrap">
+                <span class="current-price">$32.00</span>
+                <span class="old-price">$40.00</span>
+              </div>
+              <button class="add-cart-btn"><i class="fas fa-shopping-bag"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flower 5 -->
+        <div class="product-card" data-id="p5" data-category="bouquets">
+          <div class="pro-image-wrapper">
+            <span class="badge-tag badge-sale">-18% OFF</span>
+            <div class="pro-actions">
+              <button class="action-btn view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+              <button class="action-btn wish-btn" title="Save to Wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <img src="images/img-5.png" alt="Pastel Meadow Radiance" />
+          </div>
+          <div class="pro-content">
+            <span class="pro-category">Floral Bouquets</span>
+            <h3 class="pro-title">Pastel Meadow Radiance</h3>
+            <div class="pro-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="rating-count">(78)</span>
+            </div>
+            <div class="pro-bottom">
+              <div class="price-wrap">
+                <span class="current-price">$22.99</span>
+                <span class="old-price">$28.00</span>
+              </div>
+              <button class="add-cart-btn"><i class="fas fa-shopping-bag"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flower 6 -->
+        <div class="product-card" data-id="p6" data-category="orchids">
+          <div class="pro-image-wrapper">
+            <span class="badge-tag badge-hot">LUXURY</span>
+            <div class="pro-actions">
+              <button class="action-btn view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+              <button class="action-btn wish-btn" title="Save to Wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <img src="images/img-6.png" alt="Royal Amethyst Orchid" />
+          </div>
+          <div class="pro-content">
+            <span class="pro-category">Lilies & Orchids</span>
+            <h3 class="pro-title">Royal Amethyst Orchid</h3>
+            <div class="pro-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <span class="rating-count">(95)</span>
+            </div>
+            <div class="pro-bottom">
+              <div class="price-wrap">
+                <span class="current-price">$34.99</span>
+                <span class="old-price">$42.00</span>
+              </div>
+              <button class="add-cart-btn"><i class="fas fa-shopping-bag"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flower 7 -->
+        <div class="product-card" data-id="p7" data-category="wild">
+          <div class="pro-image-wrapper">
+            <span class="badge-tag badge-new">FRESH</span>
+            <div class="pro-actions">
+              <button class="action-btn view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+              <button class="action-btn wish-btn" title="Save to Wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <img src="images/img-7.png" alt="Sun-Kissed Peach Blossom" />
+          </div>
+          <div class="pro-content">
+            <span class="pro-category">Wildflowers</span>
+            <h3 class="pro-title">Sun-Kissed Peach Blossom</h3>
+            <div class="pro-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="rating-count">(64)</span>
+            </div>
+            <div class="pro-bottom">
+              <div class="price-wrap">
+                <span class="current-price">$21.50</span>
+                <span class="old-price">$26.00</span>
+              </div>
+              <button class="add-cart-btn"><i class="fas fa-shopping-bag"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flower 8 -->
+        <div class="product-card" data-id="p8" data-category="roses">
+          <div class="pro-image-wrapper">
+            <span class="badge-tag badge-sale">POPULAR</span>
+            <div class="pro-actions">
+              <button class="action-btn view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+              <button class="action-btn wish-btn" title="Save to Wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <img src="images/img-8.png" alt="Midnight Scarlet Petals" />
+          </div>
+          <div class="pro-content">
+            <span class="pro-category">Roses</span>
+            <h3 class="pro-title">Midnight Scarlet Petals</h3>
+            <div class="pro-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <span class="rating-count">(183)</span>
+            </div>
+            <div class="pro-bottom">
+              <div class="price-wrap">
+                <span class="current-price">$29.99</span>
+                <span class="old-price">$36.00</span>
+              </div>
+              <button class="add-cart-btn"><i class="fas fa-shopping-bag"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flower 9 -->
+        <div class="product-card" data-id="p9" data-category="bouquets">
+          <div class="pro-image-wrapper">
+            <span class="badge-tag badge-hot">TRENDING</span>
+            <div class="pro-actions">
+              <button class="action-btn view-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+              <button class="action-btn wish-btn" title="Save to Wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <img src="images/img-9.png" alt="Serene Garden Paradise" />
+          </div>
+          <div class="pro-content">
+            <span class="pro-category">Floral Bouquets</span>
+            <h3 class="pro-title">Serene Garden Paradise</h3>
+            <div class="pro-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <span class="rating-count">(152)</span>
+            </div>
+            <div class="pro-bottom">
+              <div class="price-wrap">
+                <span class="current-price">$27.00</span>
+                <span class="old-price">$33.00</span>
+              </div>
+              <button class="add-cart-btn"><i class="fas fa-shopping-bag"></i> Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== FOOTER ===============-->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-grid">
+          <div class="footer-col footer-about">
+            <div class="nav--logo" style="margin-bottom: 1.5rem;">
+              <a href="index.html" style="color: #fff;">
+                <i class="fas fa-spa"></i>
+                Flora<span>Bloom</span>
+              </a>
+            </div>
+            <p>
+              Your boutique destination for premium floral arrangements, luxury plants, and heartfelt gifts handcrafted with botanical artistry and sustainable care.
+            </p>
+            <div class="footer-socials">
+              <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+              <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+              <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+              <li><a href="product.html"><i class="fas fa-angle-right"></i> Shop Flowers</a></li>
+              <li><a href="review.html"><i class="fas fa-angle-right"></i> Customer Reviews</a></li>
+              <li><a href="blog.html"><i class="fas fa-angle-right"></i> Floral Blog</a></li>
+              <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Customer Care</h3>
+            <ul class="footer-links">
+              <li><a href="track-order.html"><i class="fas fa-angle-right"></i> Track My Order</a></li>
+              <li><a href="care-guide.html"><i class="fas fa-angle-right"></i> Flower Care Guide</a></li>
+              <li><a href="guarantee.html"><i class="fas fa-angle-right"></i> 7-Day Guarantee</a></li>
+              <li><a href="delivery.html"><i class="fas fa-angle-right"></i> Same-Day Delivery</a></li>
+              <li><a href="faq.html"><i class="fas fa-angle-right"></i> FAQ & Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Sign up to receive 15% off your first arrangement plus curated seasonal floral styling tips.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address..." required />
+              <button type="submit">Subscribe</button>
+            </form>
+            <div class="payment-methods">
+              <span>Secure Payments:</span>
+              <div class="pay-icons">
+                <i class="fab fa-cc-visa" title="Visa"></i>
+                <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                <i class="fab fa-cc-paypal" title="PayPal"></i>
+                <i class="fab fa-cc-apple-pay" title="Apple Pay"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="credit">
+        <p>© 2026 FloraBloom Boutique. All Rights Reserved. Crafted with <i class="fas fa-heart" style="color: var(--accent);"></i> for flower lovers.</p>
+        <div class="credit-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Delivery Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--=============== SLIDE-OUT CART DRAWER ===============-->
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3><i class="fas fa-shopping-bag"></i> Your Basket</h3>
+        <div class="close-cart-btn" title="Close"><i class="fas fa-times"></i></div>
+      </div>
+      <div class="cart-items-body"></div>
+      <div class="cart-footer">
+        <div class="cart-subtotal">
+          <span>Subtotal:</span>
+          <strong class="cart-subtotal-val">$0.00</strong>
+        </div>
+        <button class="btn checkout-btn" onclick="showToast('Proceeding to secure checkout! 🌸', 'fa-lock')">Proceed to Checkout</button>
+      </div>
+    </div>
+
+    <!--=============== SLIDE-OUT FAVOURITES / WISHLIST DRAWER ===============-->
+    <div class="wishlist-drawer">
+      <div class="cart-header">
+        <h3><i class="fas fa-heart" style="color: #e63946;"></i> Your Favourites (<span class="wish-count-val">0</span>)</h3>
+        <div class="close-wish-btn" title="Close"><i class="fas fa-times"></i></div>
+      </div>
+      <div class="wishlist-items-body"></div>
+      <div class="cart-footer">
+        <button class="btn" style="width: 100%;" onclick="moveAllWishlistToCart()">
+          <i class="fas fa-shopping-bag"></i> Move All to Basket
+        </button>
+      </div>
+    </div>
+
+    <!--=============== QUICK VIEW MODAL ===============-->
+    <div class="modal-overlay">
+      <div class="quick-view-card">
+        <button class="close-modal-btn" aria-label="Close modal" title="Close"><i class="fas fa-times"></i></button>
+        <div class="modal-img-wrap">
+          <img class="modal-img" src="images/img-1.png" alt="Flower Bouquet" />
+        </div>
+        <div class="modal-details">
+          <span class="section-tag modal-category">Fresh Flowers</span>
+          <h3 class="modal-pro-title">Blushing Rose Bouquet</h3>
+          <div class="modal-price">$24.99</div>
+          <p class="modal-desc">Hand-selected fresh botanicals arranged with sustainable floral care and timeless elegance.</p>
+          <button class="btn modal-add-cart"><i class="fas fa-shopping-bag"></i> Add to Basket</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top-btn"><i class="fas fa-arrow-up"></i></div>
+
+    <!-- Script Link -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

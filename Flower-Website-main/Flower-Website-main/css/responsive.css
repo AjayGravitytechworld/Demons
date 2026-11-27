@@ -1,0 +1,492 @@
+/*=============================================================
+  FLORABLOOM - RESPONSIVE STYLESHEET
+  100% Mobile, Tablet & Desktop Responsive System
+=============================================================*/
+
+/*=============== LARGE DEVICES / LAPTOPS (Max 1200px) ===============*/
+@media (max-width: 1200px) {
+  html {
+    font-size: 58%;
+  }
+
+  section {
+    padding: 7rem 5%;
+  }
+
+  header {
+    padding: 0 5%;
+  }
+
+  .home-container {
+    gap: 3rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .stat-item:nth-child(2)::after {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+    gap: 3rem;
+  }
+}
+
+/*=============== MEDIUM DEVICES / TABLETS (Max 991px) ===============*/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+    scroll-padding-top: 7.5rem;
+  }
+
+  header {
+    padding: 0 4%;
+  }
+
+  #mobile {
+    display: flex;
+    order: 3;
+  }
+
+  .nav--icon {
+    order: 2;
+    margin-left: auto;
+    margin-right: 1.5rem;
+  }
+
+  .nav--logo {
+    order: 1;
+  }
+
+  /* Off-canvas Modern Mobile Drawer */
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -32rem;
+    width: 30rem;
+    height: 100vh;
+    background: #ffffff;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9rem 3rem 4rem;
+    gap: 1.2rem;
+    transition: var(--transition-normal);
+    z-index: 999;
+    overflow-y: auto;
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .navbar a {
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1.2rem 1.6rem;
+    border-radius: var(--radius-sm);
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var(--transition-fast);
+  }
+
+  .navbar a::after {
+    display: none;
+  }
+
+  .navbar a:hover,
+  .navbar a.active {
+    background: var(--primary-soft);
+    color: var(--primary);
+    transform: translateX(6px);
+  }
+
+  /* Hero Section Collapse */
+  #home {
+    padding: 12rem 5% 6rem;
+    min-height: auto;
+  }
+
+  .home-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .home--content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home--content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-features {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero-visual {
+    margin-top: 4rem;
+  }
+
+  .hero-floating-card {
+    max-width: 34rem;
+    padding: 2.2rem 2.2rem 3.8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .floating-review-pill {
+    position: absolute;
+    bottom: -2.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* About Grid */
+  .about--des {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .video-container video {
+    max-height: 40rem;
+  }
+
+  /* Form & Map */
+  .form--des {
+    grid-template-columns: 1fr;
+    padding: 3.5rem;
+    gap: 3.5rem;
+  }
+
+  .map-container {
+    min-height: 32rem;
+  }
+
+  /* Quick View Modal */
+  .quick-view-card {
+    grid-template-columns: 1fr;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .modal-img-wrap {
+    padding: 2rem;
+  }
+
+  .modal-img-wrap img {
+    max-height: 24rem;
+  }
+
+  .modal-details {
+    padding: 2.5rem;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+/*=============== SMALL DEVICES / PHABLETS (Max 768px) ===============*/
+@media (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
+
+  section {
+    padding: 6rem 4%;
+  }
+
+  .heading {
+    font-size: 3.2rem;
+  }
+
+  .card--des {
+    padding: 2.5rem;
+  }
+
+  .card--content h3 {
+    font-size: 2.2rem;
+  }
+
+  .hero-features {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .hero-feat-item {
+    min-height: auto;
+    padding: 1.4rem 1.8rem;
+  }
+
+  .product-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .filter-buttons {
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .about-features-list {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-drawer,
+  .wishlist-drawer {
+    max-width: 100%;
+    right: -100%;
+  }
+
+  .credit {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .credit-links {
+    justify-content: center;
+  }
+}
+
+/*=============== EXTRA SMALL DEVICES / PHONES (Max 576px) ===============*/
+@media (max-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    height: 7rem;
+    padding: 0 4%;
+  }
+
+  .nav--logo a {
+    font-size: 2.2rem;
+  }
+
+  .nav--icon {
+    gap: 1rem;
+    margin-right: 1rem;
+  }
+
+  .icon-btn {
+    width: 3.8rem;
+    height: 3.8rem;
+    font-size: 1.5rem;
+  }
+
+  #mobile {
+    width: 3.8rem;
+    height: 3.8rem;
+    font-size: 1.7rem;
+  }
+
+  .navbar {
+    width: 82%;
+    right: -85%;
+  }
+
+  #home {
+    padding: 10rem 4% 5rem;
+  }
+
+  .home--content h3 {
+    font-size: 3.6rem;
+  }
+
+  .home--content p {
+    font-size: 1.6rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  #card {
+    grid-template-columns: 1fr;
+    padding: 2rem 4% 6rem;
+    gap: 2rem;
+  }
+
+  .card--des {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .card--content {
+    max-width: 100%;
+  }
+
+  .card--img {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card--img img {
+    max-height: 14rem;
+  }
+
+  .product--container,
+  .client--des,
+  .blog--des,
+  .icons-container,
+  .review--des {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    padding: 3rem 2rem;
+    gap: 2.5rem;
+  }
+
+  .stat-item::after {
+    display: none !important;
+  }
+
+  .form--des {
+    padding: 2.5rem 1.8rem;
+  }
+
+  .form-header h3 {
+    font-size: 2.4rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    background: transparent;
+    border: none;
+  }
+
+  .newsletter-form input {
+    padding: 1.4rem 1.8rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-full);
+    margin-bottom: 1rem;
+  }
+
+  .newsletter-form button {
+    position: static;
+    padding: 1.2rem;
+    width: 100%;
+  }
+
+  .toast-container {
+    bottom: 2rem;
+    right: 2rem;
+    left: 2rem;
+  }
+
+  .toast {
+    font-size: 1.35rem;
+    padding: 1.2rem 1.6rem;
+  }
+
+  .scroll-top-btn {
+    bottom: 2rem;
+    left: 2rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    font-size: 1.6rem;
+  }
+}
+
+/*=============== TINY SCREENS (Max 380px) ===============*/
+@media (max-width: 380px) {
+  html {
+    font-size: 47%;
+  }
+
+  .nav--logo a {
+    font-size: 2rem;
+  }
+
+  .home--content h3 {
+    font-size: 3.2rem;
+  }
+
+  .btn {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.4rem;
+  }
+}
+
+/* Responsive Styles for Customer Care Pages */
+@media (max-width: 768px) {
+  .track-stepper {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .track-stepper::before {
+    display: none;
+  }
+  .track-card {
+    padding: 2.5rem 1.8rem;
+  }
+  .flower-care-card {
+    flex-direction: column;
+  }
+  .flower-care-img {
+    width: 100%;
+    height: 18rem;
+  }
+  .flower-care-info {
+    width: 100%;
+    padding: 2rem;
+  }
+  .guarantee-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+}
